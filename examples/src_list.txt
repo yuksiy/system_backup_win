@@ -1,0 +1,23 @@
+###
+### ソースリスト
+###
+
+# ProfilesDir\AllUsers
+/cygdrive/c/Users/Public/Desktop/
+/cygdrive/c/Users/Public/Documents/
+# AllUsers には「Favorites」相当ディレクトリは存在しない。
+/cygdrive/c/ProgramData/Microsoft/Windows/Start Menu/
+
+# ProfilesDir\ユーザ名
+/cygdrive/c/Users/ユーザ名/Desktop/
+/cygdrive/c/Users/ユーザ名/Documents/
+/cygdrive/c/Users/ユーザ名/Favorites/
+/cygdrive/c/Users/ユーザ名/AppData/Roaming/Microsoft/Windows/Start Menu/
+
+# Windows
+/cygdrive/c/Windows/System32/drivers/etc/
+
+# cygwin64
+/cygdrive/c/cygwin64/etc/
+/cygdrive/c/cygwin64/var/local/
+

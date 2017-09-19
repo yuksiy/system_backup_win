@@ -1,0 +1,55 @@
+==============================================================================
+  system_backup_win
+  バックアップ先デバイスの初期設定(参考手順)
+
+  Copyright (c) 2004-2017 Yukio Shiiya
+
+  This software is released under the MIT License.
+  https://opensource.org/licenses/MIT
+==============================================================================
+
+------------------------------------------------------------------------------
+・必要に応じて、バックアップ先デバイス内のパーティションの設定を事前に実施してください。
+  (各パーティションのフォーマットは以下の手順内で実施します。)
+
+■「コマンド プロンプト」を「管理者として実行」
+
+■変数定義
+call %ALLUSERSPROFILE%\system_backup\env.bat
+cat /proc/partitions
+set BKUP_DEV=デバイスファイル名(例：/dev/sdb)
+set BKUP_DEV_TYPE=デバイスタイプ(例：sat)
+
+■バックアップ先デバイスのS.M.A.R.T.情報の確認
+smartctl %BKUP_DEV% -d %BKUP_DEV_TYPE% -a
+  →出力内容を確認
+
+■デバイスのマウント・フォーマット
+diskpart
+  list disk
+  select disk=NN
+
+  list volume
+  list partition
+  select partition=NN
+  assign letter=X
+
+  list volume
+
+  format fs=NTFS label="WINNTBKUP" quick
+  list volume
+
+  exit
+
+■デバイスのチェック
+chkdsk %BKUP_MNT_1%: /f
+
+■ディレクトリの作成
+mkdir %BKUP_MNT_1%:%LOG_ROOT%\コンピューター名
+mkdir %BKUP_MNT_1%:%DEST_ROOT%\コンピューター名
+
+■デバイスのマウント解除
+dp_list.bat volume | findstr /i "Partition"
+system_backup_dev_umount.bat
+dp_list.bat volume | findstr /i "Partition"
+

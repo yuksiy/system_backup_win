@@ -31,7 +31,7 @@ INSTALL_DIR = /usr/bin/install -d -m 755
 
 # Macro Defines
 PROJ = system_backup_win
-VER = 1.0.0
+VER = 1.0.1
 TAG = v$(VER)
 
 TAR_SORT_KEY ?= 6,6

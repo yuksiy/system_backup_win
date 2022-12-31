@@ -51,5 +51,5 @@ rem **********************************************************************
 rem * ƒƒCƒ“ƒ‹[ƒ`ƒ“
 rem **********************************************************************
 
-(bash --login -i "%LOG_CHECK_SYSTEM_BACKUP_WIN%") 2>&1 | %UNIX2DOS% > "%SCRIPT_TMP_DIR%\%CHECK_LOG%"
+(%CYGWINROOT%\bin\bash.exe --login -i "%LOG_CHECK_SYSTEM_BACKUP_WIN%") 2>&1 | %UNIX2DOS% > "%SCRIPT_TMP_DIR%\%CHECK_LOG%"
 

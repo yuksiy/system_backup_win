@@ -56,5 +56,5 @@ rem **********************************************************************
 rem 前回のログファイルの全削除
 if not "%DEV_CHECK_LOG%"=="" if exist "%DEV_CHECK_LOG%" del /f /q "%DEV_CHECK_LOG%"
 
-(bash --login -i "%LOG_CHECK_SYSTEM_BACKUP_DEV_CHECK_WIN%") 2>&1 | %UNIX2DOS% | tee "%DEV_CHECK_LOG%"
+(%CYGWINROOT%\bin\bash.exe --login -i "%LOG_CHECK_SYSTEM_BACKUP_DEV_CHECK_WIN%") 2>&1 | %UNIX2DOS% | tee "%DEV_CHECK_LOG%"
 

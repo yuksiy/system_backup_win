@@ -42,5 +42,5 @@ rem **********************************************************************
 rem * ƒƒCƒ“ƒ‹[ƒ`ƒ“
 rem **********************************************************************
 
-start /min /wait cmd.exe /c "bash --login -i '%ROBOCOPY_BACKUP%' -C %ROBOCOPY_CUT_DIRS_NUM% --robocopy-dir-options='%ROBOCOPY_DIR_OPTIONS%' --robocopy-file-options='%ROBOCOPY_FILE_OPTIONS%' '%ROBOCOPY_SRC_LIST%' '%ROBOCOPY_DEST_DIR%' 2>&1 | tee '%SCRIPT_TMP_DIR%\%ROBOCOPY_LOG%'"
+start /min /wait cmd.exe /c "%CYGWINROOT%\bin\bash.exe --login -i '%ROBOCOPY_BACKUP%' -C %ROBOCOPY_CUT_DIRS_NUM% --robocopy-dir-options='%ROBOCOPY_DIR_OPTIONS%' --robocopy-file-options='%ROBOCOPY_FILE_OPTIONS%' '%ROBOCOPY_SRC_LIST%' '%ROBOCOPY_DEST_DIR%' 2>&1 | tee '%SCRIPT_TMP_DIR%\%ROBOCOPY_LOG%'"
 

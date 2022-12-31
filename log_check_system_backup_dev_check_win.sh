@@ -6,7 +6,7 @@
 #   構文
 #     log_check_system_backup_dev_check_win.sh
 #
-#   Copyright (c) 2007-2017 Yukio Shiiya
+#   Copyright (c) 2007-2023 Yukio Shiiya
 #
 #   This software is released under the MIT License.
 #   https://opensource.org/licenses/MIT

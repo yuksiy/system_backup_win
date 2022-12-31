@@ -2,7 +2,7 @@
   system_backup_win
   バックアップ先デバイスの交換方法(参考手順)
 
-  Copyright (c) 2016-2017 Yukio Shiiya
+  Copyright (c) 2016-2023 Yukio Shiiya
 
   This software is released under the MIT License.
   https://opensource.org/licenses/MIT

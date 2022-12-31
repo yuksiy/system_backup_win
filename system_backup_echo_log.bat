@@ -6,7 +6,7 @@ rem     ログメッセージを画面とログファイルに出力する
 rem   構文
 rem     system_backup_echo_log.bat ログファイル名 ログメッセージ
 rem
-rem   Copyright (c) 2012-2017 Yukio Shiiya
+rem   Copyright (c) 2012-2023 Yukio Shiiya
 rem
 rem   This software is released under the MIT License.
 rem   https://opensource.org/licenses/MIT

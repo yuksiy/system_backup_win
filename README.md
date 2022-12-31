@@ -89,4 +89,4 @@ MIT License. See [LICENSE](https://github.com/yuksiy/system_backup_win/blob/mast
 
 ## Copyright
 
-Copyright (c) 2004-2017 Yukio Shiiya
+Copyright (c) 2004-2023 Yukio Shiiya

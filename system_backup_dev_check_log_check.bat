@@ -6,7 +6,7 @@ rem     log_check_system_backup_dev_check_win.shのラッパースクリプト
 rem   構文
 rem     system_backup_dev_check_log_check.bat
 rem
-rem   Copyright (c) 2007-2017 Yukio Shiiya
+rem   Copyright (c) 2007-2023 Yukio Shiiya
 rem
 rem   This software is released under the MIT License.
 rem   https://opensource.org/licenses/MIT

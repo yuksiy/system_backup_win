@@ -6,7 +6,7 @@ rem     前回のログファイルを全削除する
 rem   構文
 rem     system_backup_log_del.bat
 rem
-rem   Copyright (c) 2006-2017 Yukio Shiiya
+rem   Copyright (c) 2006-2023 Yukio Shiiya
 rem
 rem   This software is released under the MIT License.
 rem   https://opensource.org/licenses/MIT
